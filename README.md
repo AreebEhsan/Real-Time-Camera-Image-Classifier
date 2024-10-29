@@ -1,6 +1,6 @@
-# Camera Classifier
+# Real-Time Camera Image Classifier using Machine Learning
 
-Camera Classifier is a Python-based application that allows users to classify images captured from their webcam. The application leverages a simple machine learning model (LinearSVC) to categorize images into two predefined classes. The GUI is built using Tkinter, and OpenCV is used to handle the webcam input.
+Real-Time Camera Image Classifier using Machine Learning is a Python-based application that allows users to classify images captured from their webcam. The application leverages a simple machine learning model (LinearSVC) to categorize images into two predefined classes. The GUI is built using Tkinter, and OpenCV is used to handle the webcam input.
 
 ## Features
 
