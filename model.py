@@ -14,7 +14,7 @@ class Model:
 
         target_width, target_height = 120, 140  # Example target dimensions
 
-        for i in range(1, counters[0]):
+        for i in range(1, counters[0]): # Processing images and assiging labels
             img = cv.imread(f'1/frame{i}.jpg')
             img = cv.resize(img, (target_width, target_height))  # Resize to target dimensions
             img = img.flatten()  # Flatten image to 1D array
@@ -34,7 +34,7 @@ class Model:
         self.model.fit(img_list, class_list)
         print("Model Successfully Trained!")
 
-    def predict(self, frame):
+    def predict(self, frame): # Predicting class of a given frame
         frame = frame[1]
         cv.imwrite("frame.jpg", cv.cvtColor(frame, cv.COLOR_RGB2GRAY))
         img = PIL.Image.open("frame.jpg")
